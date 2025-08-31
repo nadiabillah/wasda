@@ -1,0 +1,237 @@
+/* --- Messages Form --- */
+.form-container {
+    background: #fff;
+    padding: 2.5rem 2rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(15, 61, 87, 0.10), 0 1.5px 4px #e0e7ef;
+    max-width: 700px;
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+/* --- Title --- */
+.form-group label[for="title"] {
+    display: block;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #0f3d57;
+    margin-bottom: 1rem;
+    letter-spacing: 0.5px;
+}
+
+/* --- User Info Card --- */
+.user-info-card {
+    background: #f7fafc;
+    border: 1px solid #e0e7ef;
+    border-radius: 10px;
+    padding: 1rem 1.5rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+    box-shadow: 0 2px 8px rgba(15, 61, 87, 0.06);
+}
+.user-info-card > div {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.user-info-label {
+    font-size: 1.05rem;
+    color: #888;
+    margin-bottom: 2px;
+}
+.user-info-value {
+    font-weight: bold;
+    font-size: 1.15rem;
+    color: #0f3d57;
+}
+.user-info-email {
+    font-size: 1.08rem;
+    color: #17618a;
+    font-weight: 500;
+}
+
+/* --- Form Elements --- */
+.form-group label,
+.schedule-container label,
+.schedule-options label {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #0f3d57;
+    display: block;
+}
+.form-group input,
+.form-group select,
+.form-group textarea,
+.schedule-container input,
+.schedule-container select,
+.schedule-options input {
+    width: 100%;
+    padding: 0.7rem 1rem;
+    border: 1px solid #e0e7ef;
+    border-radius: 8px;
+    font-size: 1rem;
+    background: #f8fafc;
+    margin-top: 0.3rem;
+    transition: border 0.2s;
+    box-sizing: border-box;
+}
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus,
+.schedule-container input:focus,
+.schedule-container select:focus,
+.schedule-options input:focus {
+    border: 1.5px solid #0f3d57;
+    outline: none;
+    background: #fff;
+}
+input[type="file"] {
+    background: #f8fafc;
+    border: none;
+    padding: 0.5rem 0;
+}
+
+/* --- Schedule --- */
+.schedule-container,
+.schedule-options {
+    margin-top: 1rem;
+}
+
+/* --- Button --- */
+.save-button {
+    margin-top: 1.5rem;
+    background: #0f3d57;
+    color: white;
+    padding: 0.9rem 0;
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(15, 61, 87, 0.10);
+    transition: background 0.2s, transform 0.2s;
+}
+.save-button:hover {
+    background: linear-gradient(90deg, #17618a 60%, #0f3d57 100%);
+    transform: translateY(-2px) scale(1.03);
+    box-shadow: 0 6px 24px rgba(15, 61, 87, 0.13);
+}
+.btn-back-dashboard {
+    background: #e0e7ef;
+    color: #0f3d57;
+    margin-top: 0.5rem;
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+    padding: 0.9rem 0;
+    width: 100%;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-decoration: none;
+    box-shadow: 0 2px 8px rgba(15, 61, 87, 0.08);
+    transition: background 0.2s, color 0.2s;
+}
+.btn-back-dashboard:hover {
+    background: #d1dae7;
+    color: #0a2a3f;
+}
+
+/* --- Alert --- */
+.alert-danger {
+    background: #f8d7da;
+    color: #721c24;
+    border-radius: 6px;
+    padding: 0.7rem 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid #f5c6cb;
+}
+.alert-success {
+    background: #d4edda;
+    color: #155724;
+    border-radius: 6px;
+    padding: 0.7rem 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid #c3e6cb;
+}
+
+/* --- Checkbox List --- */
+.checkbox-list {
+    height: 180px;
+    overflow-y: auto;
+    background: #f8fafc;
+    border: 1px solid #e0e7ef;
+    border-radius: 8px;
+    padding: 0.7rem 1rem;
+    margin-bottom: 1rem;
+}
+.checkbox-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 4px;
+    font-size: 0.98rem;
+    color: #17618a;
+    cursor: pointer;
+    line-height: 1.4;
+}
+.checkbox-item input[type="checkbox"] {
+    margin: 0;
+    accent-color: #17618a;
+    flex-shrink: 0;
+    width: 18px;
+    height: 18px;
+}
+.checkbox-item span {
+    flex: 1;
+    font-size: 0.98rem;
+    color: #17618a;
+    line-height: 1.4;
+}
+#opd-phone-search {
+    width: 100%;
+    padding: 0.7rem 1rem;
+    border: 1px solid #e0e7ef;
+    border-radius: 8px;
+    font-size: 1rem;
+    background: #f8fafc;
+    margin-bottom: 0.5rem;
+}
+
+/* --- Ringkasan Pilihan --- */
+.selected-opd-summary {
+    margin-bottom: 8px;
+    min-height: 24px;
+    font-size: 1rem;
+    color: #17618a;
+    font-weight: 500;
+    background: #f7fafc;
+    border-radius: 6px;
+    padding: 6px 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.selected-opd-summary .summary-names {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 70%;
+    display: inline-block;
+}
+.selected-opd-summary .summary-count {
+    color: #0f3d57;
+    font-weight: bold;
+    margin-left: 8px;
+}
+
+/* --- Utility --- */
+.hidden {
+    display: none !important;
+}

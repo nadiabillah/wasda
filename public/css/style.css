@@ -1,0 +1,49 @@
+/* --- Global --- */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #f2f4f8;
+    color: #333;
+}
+
+/* --- Header --- */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #0f3d57;
+    padding: 1rem 2rem;
+    color: white;
+}
+
+/* Logo di Header */
+.logo-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-left: 2rem;
+}
+.logo-header img {
+    width: 60px;
+    height: 60px;
+}
+
+/* Profil di Header */
+.profile-section {
+    margin-right: 2rem;
+}
+.profile-section img {
+    cursor: pointer;
+    width: 60px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.profile-section button {
+    background: white;
+    color: #0f3d57;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}

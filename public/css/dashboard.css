@@ -1,0 +1,265 @@
+/* --- Controls --- */
+.dashboard-controls {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1.5rem;
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    padding: 1.5rem 0 0 0;
+    margin-bottom: 0;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.dashboard-controls select {
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+    height: 3.25rem;
+    padding: 0.7rem 3.5rem 0.7rem 1.5rem;
+    border: 1px solid #e0e7ef;
+    border-radius: 8px;
+    font-size: 1rem;
+    margin-top: 0.3rem;
+    background: #e0e7ef;
+    transition: border 0.2s;
+}
+#filter-phone {
+    height: 1.8rem;
+    border-radius: 8px;
+    border: 1px solid #888;
+    padding: 0 1rem;
+    font-size: 1rem;
+    margin-left: 1rem;
+    min-width: 180px;
+}
+#filter-btn,
+.dashboard-controls button {
+    background: #0f3d57;
+    color: #fff;
+    padding: 0.6rem 1rem;
+    border: none;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(15, 61, 87, 0.06);
+    transition: background 0.2s, transform 0.2s;
+    margin-left: 0.5rem;
+}
+#filter-btn:hover,
+.dashboard-controls button:hover {
+    background: #17618a;
+    transform: translateY(-2px) scale(1.04);
+    box-shadow: 0 6px 24px rgba(15, 61, 87, 0.13);
+}
+
+/* --- Select2 Clear Button --- */
+.select2-container--default .select2-selection--single .select2-selection__clear {
+    display: block;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.2rem;
+    color: #888;
+    cursor: pointer;
+    z-index: 2;
+    background: transparent;
+    padding: 0 4px;
+}
+
+/* --- Table --- */
+.dashboard-table {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: auto;
+    overflow-x: auto;
+}
+.dashboard-table table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    table-layout: auto;
+}
+.dashboard-table th,
+.dashboard-table td {
+    padding: 1rem;
+    border-bottom: 1px solid #ccc;
+    vertical-align: top;
+    word-break: break-word;
+    white-space: pre-line;
+    text-align: left;
+}
+.dashboard-table th:nth-child(1),
+.dashboard-table td:nth-child(1) { max-width: 170px; width: 170px; }
+.dashboard-table th:nth-child(2),
+.dashboard-table td:nth-child(2) { max-width: 110px; width: 110px; }
+.dashboard-table th:nth-child(3),
+.dashboard-table td:nth-child(3) { max-width: 150px; width: 150px; }
+.dashboard-table th:nth-child(4),
+.dashboard-table td:nth-child(4) {
+    max-width: 420px;
+    width: 420px;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    white-space: pre-line;
+}
+.dashboard-table .text-center {
+    text-align: center;
+    vertical-align: middle;
+    font-size: 1.1rem;
+    color: #555;
+    height: 120px;
+}
+
+/* --- Status Badge --- */
+.badge-terkirim {
+    color: #28a745;
+    background: none;
+    padding: 0;
+    border-radius: 0;
+    font-weight: bold;
+    font-size: 1em;
+}
+.badge-belum {
+    color: #dc3545;
+    background: none;
+    padding: 0;
+    border-radius: 0;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+/* --- Actions --- */
+.dashboard-actions {
+    text-align: center;
+    padding: 2rem;
+}
+.btn-go {
+    background: #0f3d57;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: background 0.2s, transform 0.2s;
+}
+.btn-go:hover {
+    background: #17618a;
+    transform: translateY(-2px) scale(1.04);
+    box-shadow: 0 6px 24px rgba(15, 61, 87, 0.13);
+}
+.btn-go select:focus {
+    background: #17618a;
+    transform: translateY(-2px) scale(1.04);
+    box-shadow: 0 6px 24px rgba(15, 61, 87, 0.13);
+}
+
+/* --- Modal Profil --- */
+.modal {
+    position: fixed;
+    z-index: 9999;
+    left: 0; top: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.modal.hidden { display: none; }
+.profile-modal-content {
+    background: #fff;
+    border-radius: 12px;
+    padding: 2rem 2.5rem;
+    min-width: 320px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+    position: relative;
+    text-align: center;
+}
+.close-button {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    background: transparent;
+    border: none;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+.profile-modal-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    object-fit: cover;
+}
+.profile-modal-text {
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+}
+.logout-button {
+    background: #0f3d57;
+    color: #fff;
+    padding: 0.7rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.logout-button:hover { background: #17618a; }
+
+/* --- Pagination --- */
+.pagination-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pagination {
+    display: inline-flex;
+    gap: 8px;
+    padding: 2rem;
+    margin: 0;
+    list-style: none;
+}
+.pagination li { display: inline; }
+.pagination .page-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    margin: 0 3px;
+    border-radius: 50%;
+    border: 1.5px solid #e0e7ef;
+    background: #f7fafc;
+    color: #17618a;
+    font-weight: 500;
+    font-size: 1.08em;
+    text-decoration: none;
+    transition: background 0.18s, color 0.18s, border 0.18s;
+}
+.pagination .page-link:hover,
+.pagination .page-link:focus {
+    background: #e0e7ef;
+    color: #0f3d57;
+    border-color: #17618a;
+}
+.pagination .active .page-link {
+    background: #0f3d57;
+    color: #fff;
+    border-color: #17618a;
+    font-weight: bold;
+    cursor: default;
+}
+.pagination .disabled .page-link {
+    background: #f7fafc;
+    color: #bbb;
+    border-color: #e0e7ef;
+    cursor: not-allowed;
+}
