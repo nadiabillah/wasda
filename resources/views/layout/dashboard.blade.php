@@ -55,7 +55,8 @@
                             <td>{{ $msg->email ?? '-' }}</td>
                             <td>{!! nl2br(e($msg->message)) !!}</td>
                             <td>
-                                {{ \Carbon\Carbon::parse($msg->schedule)->format('H:i d F Y') }}
+                                {{ \Carbon\Carbon::parse($msg->schedule)->format('H:i') }}<br>
+                                {{ \Carbon\Carbon::parse($msg->schedule)->translatedFormat('d F Y') }}
                             </td>
                             <td>
                                 @if($msg->sent == 1)
