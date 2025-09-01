@@ -15,7 +15,7 @@ Aplikasi web berbasis **Laravel** untuk manajemen dan pengiriman pesan WhatsApp 
 | Library / Tools         | Kegunaan                                 |
 |------------------------ |------------------------------------------|
 | Laravel 12              | Framework backend utama                  |
-| PHP >= 8.2              | Bahasa pemrograman dan requirement Laravel|
+| PHP ^8.2              | Bahasa pemrograman dan requirement Laravel|
 | MySQL                   | Database aplikasi                        |
 | Bootstrap 5 (CDN)       | Desain UI responsif dan modern           |
 | SimpleMDE (CDN)         | Editor markdown untuk pesan WhatsApp     |
@@ -25,7 +25,7 @@ Aplikasi web berbasis **Laravel** untuk manajemen dan pengiriman pesan WhatsApp 
 
 ### Prasyarat
 
-- PHP >= 8.2
+- PHP ^8.2
 - Composer
 - MySQL
 - Laravel 12
