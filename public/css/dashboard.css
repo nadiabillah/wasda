@@ -73,7 +73,7 @@
 
 /* --- Table --- */
 .dashboard-table {
-    padding: 2rem;
+    padding: 1.2rem;
     max-width: 1200px;
     margin: auto;
     overflow-x: auto;
@@ -84,37 +84,39 @@
     background: white;
     border-radius: 10px;
     overflow: hidden;
-    table-layout: auto;
+    table-layout: fixed; /* agar lebar kolom konsisten */
+    font-size: 0.97rem;  /* perkecil font tabel */
 }
 .dashboard-table th,
 .dashboard-table td {
-    padding: 1rem;
+    padding: 0.7rem 0.6rem; /* lebih compact */
     border-bottom: 1px solid #ccc;
     vertical-align: top;
     word-break: break-word;
     white-space: pre-line;
     text-align: left;
 }
+
+/* --- Lebar Kolom --- */
 .dashboard-table th:nth-child(1),
-.dashboard-table td:nth-child(1) { max-width: 170px; width: 170px; }
+.dashboard-table td:nth-child(1) { max-width: 180px; width: 13%; }
 .dashboard-table th:nth-child(2),
-.dashboard-table td:nth-child(2) { max-width: 110px; width: 110px; }
+.dashboard-table td:nth-child(2) { max-width: 120px; width: 12%; }
 .dashboard-table th:nth-child(3),
-.dashboard-table td:nth-child(3) { max-width: 150px; width: 150px; }
+.dashboard-table td:nth-child(3) { max-width: 170px; width: 20%; }
 .dashboard-table th:nth-child(4),
-.dashboard-table td:nth-child(4) {
-    max-width: 420px;
-    width: 420px;
-    overflow-wrap: break-word;
-    word-break: break-word;
-    white-space: pre-line;
-}
+.dashboard-table td:nth-child(4) { max-width: 340px; width: 30%; }
+.dashboard-table th:nth-child(5),
+.dashboard-table td:nth-child(5) { max-width: 120px; width: 15%; }
+.dashboard-table th:nth-child(6),
+.dashboard-table td:nth-child(6) { max-width: 110px; width: 10%; }
+
 .dashboard-table .text-center {
     text-align: center;
     vertical-align: middle;
-    font-size: 1.1rem;
+    font-size: 0.97rem;
     color: #555;
-    height: 120px;
+    height: 80px;
 }
 
 /* --- Status Badge --- */
